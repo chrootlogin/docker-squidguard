@@ -9,7 +9,7 @@ ARG SQUIDGUARD_SHA512=6d55bda4c6b597ff52fed95ec336ca2d0b028359332217a552e645a3ac
 ARG BERKELEYDB_VERSION=4.5.20
 ARG BERKELEYDB_SHA512=c34907a53323158627971f464c32b9a5b00aff0fa779c67117826ebeea86a4731e272a5dc6dc5ae32f16284ff15c79d93050273795381acaaefd48e18dc2d612
 
-ARG BLOCKLIST=http://www.shallalist.de/Downloads/shallalist.tar.gz
+ENV BLOCKLIST=http://www.shallalist.de/Downloads/shallalist.tar.gz
 ARG BLOCKED_CATEGORIES=adv,aggressive,porn,spyware,violence,warez
 
 ENV REDIRECT_URL=https://duckduckgo.com
