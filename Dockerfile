@@ -27,6 +27,7 @@ RUN set -ex \
   && apk add --update \
   alpine-sdk \
   coreutils \
+  python3 \
   wget \
   # Download BerkeleyDB
   && wget -q http://download.oracle.com/berkeley-db/db-${BERKELEYDB_VERSION}.tar.gz -O /tmp/db.tgz \

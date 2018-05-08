@@ -13,7 +13,7 @@ fi
 chown -R squid:squid /cache
 chown -R squid:squid /logs
 
-sed -i "s#http://exampleblockpage.com#${REDIRECT_URL}#g" /usr/local/squidGuard/squidGuard.conf
+replace_string.py "/usr/local/squidGuard/squidGuard.conf" "http://exampleblockpage.com" "${REDIRECT_URL}"
 
 if [ ! -d /cache/00 ]; then
   echo "Initializing cache..."
