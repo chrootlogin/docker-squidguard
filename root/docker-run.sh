@@ -13,6 +13,8 @@ fi
 chown -R squid:squid /cache
 chown -R squid:squid /logs
 
+rm -rf /var/run/squid /var/run/squid.pid
+
 replace_string.py "/usr/local/squidGuard/squidGuard.conf" "http://exampleblockpage.com" "${REDIRECT_URL}"
 
 if [ ! -d /cache/00 ]; then
